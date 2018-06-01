@@ -13,7 +13,7 @@ const loadDatabase = () => {
       upsert: true,
       new: true
     }, (err, data) => {
-      console.log('Listing Created:', data);
+      console.log('Listing Created:', data.listing_id);
     })
   })
 }
