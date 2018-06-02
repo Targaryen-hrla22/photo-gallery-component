@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import styled from 'styled-components';
+
+const PhotoContainer = styled.div`
+  background-color: tomato;
+`;
 
 class App extends Component {
   constructor() {
@@ -42,10 +47,10 @@ class App extends Component {
     return (
       <div>
         {this.state.photos.map((photo) => 
-          <div>
+          <PhotoContainer>
             <img src={photo.url} />
             <p>{photo.description}</p>
-          </div>
+          </PhotoContainer>
         )}
       </div>
     )
