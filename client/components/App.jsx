@@ -2,8 +2,19 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
 
-const PhotoContainer = styled.div`
-  background-color: tomato;
+import Lightbox from './Lightbox.jsx';
+
+const MainPhotoContainer = styled.div`
+  width: 100%;
+  height: 750px;
+  overflow: hidden;
+`;
+
+const MainPhoto = styled.img`
+  margin-top: 80px;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
 `;
 
 class App extends Component {
@@ -13,7 +24,8 @@ class App extends Component {
     this.state = {
       mainPhoto: {},
       photos: [],
-      currentListing: 1
+      currentListing: 1,
+      lightbox: true
     }
   }
 
@@ -39,6 +51,23 @@ class App extends Component {
       })
   }
 
+  lightboxOrNah() {
+    this.setState({
+      lightbox: !this.state.lightbox
+    })
+  }
+
+  renderLightBox() {
+    console.log('Lightbox is:', this.state.lightbox);
+    if (this.state.lightbox) {
+      return (
+        <Lightbox toggleLightbox={this.lightboxOrNah.bind(this)} />
+      )
+    } else {
+      console.log('Lighthouse should not render, it is set to false');
+    }
+  }
+
   componentDidMount() {
     this.getPhotos(this.state.currentListing);
   }
@@ -46,12 +75,10 @@ class App extends Component {
   render() {
     return (
       <div>
-        {this.state.photos.map((photo) => 
-          <PhotoContainer>
-            <img src={photo.url} />
-            <p>{photo.description}</p>
-          </PhotoContainer>
-        )}
+        <MainPhotoContainer>
+          <MainPhoto src={this.state.mainPhoto.url} onClick={this.lightboxOrNah.bind(this)}></MainPhoto>
+        </MainPhotoContainer>
+        {this.renderLightBox()}
       </div>
     )
   }
