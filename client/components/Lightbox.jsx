@@ -10,6 +10,32 @@ const Background = styled.div`
   background-color: rgb(0,0,0,0.8);
 `;
 
+const Topbar = styled.div`
+  height: 7%;
+  background-color: tomato;
+  margin: 10px;
+  `;
+
+const CenterContainer = styled.div`
+  height: 70%;
+  background-color: tomato;
+  margin: 10px;
+`;
+
+const Arrow = styled.div`
+  height: 100%;
+  width: 5%;
+  background-color: peachpuff;
+  display: inline-block;
+`;
+
+const PhotoView = styled.div`
+  height: 100%;
+  width: 90%;
+  background-color: purple;
+  display: inline-block;
+`;
+
 class Lightbox extends Component {
   constructor(props) {
     super(props);
@@ -18,11 +44,27 @@ class Lightbox extends Component {
       currentPhoto: {}
     }
   }
-  
+
   render() {
     return (
       <Background>
-        <button onClick={props.toggleLightbox}>X</button>
+        <Topbar>
+          <button onClick={this.toggleLightbox}>X</button>
+        </Topbar>
+        <CenterContainer>
+          <Arrow id="left-arrow">
+
+          </Arrow>
+          <PhotoView id="current-photo">
+
+          </PhotoView>
+          <Arrow id="right-arrow">
+
+          </Arrow>
+        </CenterContainer>
+        <div id="gallery">
+
+        </div>
       </Background>
     )
   }
