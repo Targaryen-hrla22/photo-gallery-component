@@ -25,7 +25,7 @@ class App extends Component {
       mainPhoto: {},
       photos: [],
       currentListing: 1,
-      lightbox: true
+      lightbox: false
     }
   }
 
@@ -61,7 +61,7 @@ class App extends Component {
     console.log('Lightbox is:', this.state.lightbox);
     if (this.state.lightbox) {
       return (
-        <Lightbox toggleLightbox={this.lightboxOrNah.bind(this)} />
+        <Lightbox toggleLightbox={this.lightboxOrNah.bind(this)} photos={this.state.photos} />
       )
     } else {
       console.log('Lighthouse should not render, it is set to false');
