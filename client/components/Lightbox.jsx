@@ -45,7 +45,7 @@ const GalleryContainer = styled.div`
 `;
 
 const Gallery = styled.div`
-  width: 60%;
+  width: 50%;
   height: 80%;
   margin: auto;
   margin-top: 10px;
@@ -56,7 +56,7 @@ const Gallery = styled.div`
 
 const Persisitant = styled.div`
   color: white;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   display: flex;
   padding: 10px;
 `;
@@ -78,12 +78,12 @@ const ToggleGalleryButton = styled.span`
 
 const Photos = styled.div`
   display: flex;
-  justify-content: space-around;
 `;
 
 const Photo = styled.img`
-  height: 100px;
-  width: 200px;
+  height: 60px;
+  width: 100px;
+  margin: 5px;
   object-fit: cover;
 `;
 
@@ -190,7 +190,7 @@ class Lightbox extends Component {
           <Gallery>
             <Persisitant>
               <Description>
-                <span>{this.state.currentPhotoIndex}/{this.state.photos.length}: </span>
+                <span>{this.state.currentPhotoIndex + 1}/{this.state.photos.length}: </span>
                 <span>{this.state.photos[this.state.currentPhotoIndex].description}</span>
               </Description>
               <ToggleGallery>

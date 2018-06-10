@@ -23,23 +23,23 @@ const photoData = [
     listing_id: 1,
     photos: [
       {
-        description: "This is a description",
+        description: "The Santa Monica Pier!",
         url: "https://s3.amazonaws.com/airbnb-clone-hrla22/1-1.jpg"
       },
       {
-        description: "This is a description",
+        description: "Flat screen TV available in the living room",
         url: "https://s3.amazonaws.com/airbnb-clone-hrla22/1-2.jpg"
       },
       {
-        description: "This is a description",
+        description: "Full sized kitchen",
         url: "https://s3.amazonaws.com/airbnb-clone-hrla22/1-3.jpg"
       },
       {
-        description: "This is a description",
+        description: "Bedroom",
         url: "https://s3.amazonaws.com/airbnb-clone-hrla22/1-4.jpg"
       },
       {
-        description: "This is a description",
+        description: "Within walking distance of the canals",
         url: "https://s3.amazonaws.com/airbnb-clone-hrla22/1-5.jpg"
       },
     ]
