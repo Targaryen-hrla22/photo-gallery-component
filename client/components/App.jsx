@@ -24,7 +24,7 @@ class App extends Component {
     this.state = {
       mainPhoto: {},
       photos: [],
-      currentListing: 1,
+    currentListing: 1,
       lightbox: false
     }
   }

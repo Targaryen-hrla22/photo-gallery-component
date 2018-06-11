@@ -77,10 +77,12 @@ const ToggleGalleryButton = styled.span`
 `;
 
 const Photos = styled.div`
-  display: flex;
+  overflow: hidden;
 `;
 
 const Photo = styled.img`
+  display: inline-block;
+  position: relative;
   height: 60px;
   width: 100px;
   margin: 5px;

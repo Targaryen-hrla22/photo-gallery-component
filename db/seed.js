@@ -49,23 +49,47 @@ const photoData = [
     photos: [
       {
         description: "This is a description",
-        url: "https://s3.amazonaws.com/airbnb-clone-hrla22/1-1.jpg"
+        url: "https://s3.amazonaws.com/airbnb-clone-hrla22/2-1.jpg"
       },
       {
         description: "This is a description",
-        url: "https://s3.amazonaws.com/airbnb-clone-hrla22/1-2.jpg"
+        url: "https://s3.amazonaws.com/airbnb-clone-hrla22/2-2.jpg"
       },
       {
         description: "This is a description",
-        url: "https://s3.amazonaws.com/airbnb-clone-hrla22/1-3.jpg"
+        url: "https://s3.amazonaws.com/airbnb-clone-hrla22/2-3.jpg"
       },
       {
         description: "This is a description",
-        url: "https://s3.amazonaws.com/airbnb-clone-hrla22/1-4.jpg"
+        url: "https://s3.amazonaws.com/airbnb-clone-hrla22/2-4.jpg"
       },
       {
         description: "This is a description",
-        url: "https://s3.amazonaws.com/airbnb-clone-hrla22/1-5.jpg"
+        url: "https://s3.amazonaws.com/airbnb-clone-hrla22/2-5.jpg"
+      },
+      {
+        description: "This is a description",
+        url: "https://s3.amazonaws.com/airbnb-clone-hrla22/2-6.jpg"
+      },
+      {
+        description: "This is a description",
+        url: "https://s3.amazonaws.com/airbnb-clone-hrla22/2-7.jpg"
+      },
+      {
+        description: "This is a description",
+        url: "https://s3.amazonaws.com/airbnb-clone-hrla22/2-8.jpg"
+      },
+      {
+        description: "This is a description",
+        url: "https://s3.amazonaws.com/airbnb-clone-hrla22/2-9.jpg"
+      },
+      {
+        description: "This is a description",
+        url: "https://s3.amazonaws.com/airbnb-clone-hrla22/2-10.jpg"
+      },
+      {
+        description: "This is a description",
+        url: "https://s3.amazonaws.com/airbnb-clone-hrla22/2-11.jpg"
       },
     ]
   },
