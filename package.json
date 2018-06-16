@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test file specified\" && exit 1",
-    "start": "nodemon ./server/index.js",
-    "seed": "node ./db/seed.js",
+    "start": "node ./server/index.js",
     "build": "webpack -w --watch"
   },
   "keywords": [],
