@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const { router } = require('./router.js');
 require('../db');
-require('../db/seed.js')
+require('../db/seed.js');
 
 const PORT = 1337;
 const app = express();

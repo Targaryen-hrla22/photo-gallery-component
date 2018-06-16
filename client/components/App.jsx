@@ -24,7 +24,7 @@ class App extends Component {
     this.state = {
       mainPhoto: {},
       photos: [],
-    currentListing: 1,
+      currentListing: 1,
       lightbox: false
     }
   }
@@ -32,7 +32,7 @@ class App extends Component {
   getPhotos(id) {
     axios({
       method: 'GET',
-      url: '/api/photos',
+      url: 'http://ec2-34-239-126-92.compute-1.amazonaws.com/api/photos',
       params: {
         listing_id: id
       }
